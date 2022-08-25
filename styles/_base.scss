@@ -1,0 +1,26 @@
+@use "./reset";
+
+html {
+  scroll-behavior: smooth;
+}
+
+#__next {
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+  max-width: 80ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
