@@ -1,0 +1,176 @@
+@use "../../../styles/mixins" as mix;
+
+.countdown {
+  align-items: center;
+  background: #1e1f29 url("./img/bg-stars.svg");
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 100vh;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+
+  h1 {
+    color: #fff;
+    font-size: calc(1.5rem + 1vw);
+    letter-spacing: 8px;
+    margin: 60px 30px;
+  }
+
+  section {
+    @include mix.flex-center();
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+    div {
+      @include mix.flex-center(column);
+      margin-right: 30px;
+
+      h2 {
+        color: #8486a9;
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__time {
+    background-color: #33354d;
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px 0px #16151d;
+    color: #fb6087;
+    font-size: 5.5em;
+    height: 140px;
+    line-height: 138px;
+    margin-bottom: 27px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 150px;
+
+    &::before,
+    &::after {
+      background: #24242e;
+      border-radius: 50%;
+      content: "";
+      height: 10px;
+      position: absolute;
+      top: calc(50% - 5px);
+      width: 10px;
+      z-index: 6;
+    }
+    &::before {
+      left: -5px;
+    }
+    &::after {
+      right: -5px;
+    }
+
+    > span {
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    &__top {
+      background-color: #2a2a41;
+      transform-origin: 50% 100%;
+      transform: perspective(200px);
+      z-index: 3;
+    }
+    &__top::after,
+    &__bottom__back::after {
+      border-bottom: 1px solid #24242e;
+      bottom: 0;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &__bottom {
+      z-index: 1;
+      &::before {
+        background-color: #33354d;
+        content: "";
+        display: block;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    &__bottom__back {
+      background-color: #33354d;
+      height: 50%;
+      overflow: hidden;
+      top: 0;
+      z-index: 2;
+      span {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &__top,
+    &__top__back {
+      backface-visibility: hidden;
+      height: 50%;
+      overflow: hidden;
+    }
+    &__top__back {
+      background-color: #33354d;
+      bottom: 0;
+      transform-origin: 50% 0;
+      transform: perspective(200px) rotateX(180deg);
+      z-index: 4;
+      span {
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: -100%;
+      }
+    }
+  }
+
+  footer {
+    @include mix.flex-center(column);
+    background: url("./img/pattern-hills.svg");
+    color: #8486a9;
+    height: 200px;
+    text-transform: none;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        color: #fb6087;
+      }
+    }
+
+    ul {
+      display: flex;
+      padding: 30px;
+
+      a {
+        margin: 30px 30px 0;
+      }
+    }
+  }
+}
