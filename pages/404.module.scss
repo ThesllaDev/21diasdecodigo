@@ -1,0 +1,64 @@
+@use "../styles/mixins" as mix;
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap");
+
+// COLOR'S
+$white-color: #fff;
+$black-color: #333;
+// GAP'S
+$gap-small: 1.25rem; //20px
+$gap-medium: 2.5rem; //40px
+$gap-large: 5rem; //80px
+
+.page__header,
+.main__content,
+.page__footer {
+  background: $white-color;
+  color: $black-color;
+  font-family: "Inconsolata", monospace;
+}
+
+.page__header {
+  padding: $gap-small 0 0 $gap-small;
+}
+
+.main__content {
+  @include mix.flex-center(column);
+  padding: $gap-large $gap-small;
+
+  img {
+    margin: $gap-large $gap-small;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 60px 0 30px;
+  }
+
+  &__description {
+    font-size: 18px;
+    margin-bottom: $gap-large;
+  }
+
+  &__btn__homepage {
+    background: $black-color;
+    color: $white-color;
+    font-weight: bold;
+    padding: $gap-small $gap-medium;
+    text-decoration: none;
+  }
+}
+
+.page__footer {
+  color: #bdbdbd;
+  font-weight: bold;
+  padding: $gap-medium $gap-medium $gap-small;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__content {
+    flex-direction: row;
+  }
+}
