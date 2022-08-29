@@ -23,8 +23,8 @@ Os principais objetivos desse desafio é aprender e melhorar suas habilidades de
 - [x] 4. Crie uma calculadora
 - [x] 5. Desenvolva uma página customizada que exiba o erro 404
 - [x] 6. Crie um card com o efeito glassmorphism
-- [ ] 7. Desenvolva um contado
-- [ ] 8. Desenvolva um toggle que altera o tema para claro e escuro
+- [x] 7. Desenvolva um contador
+- [x] 8. Desenvolva um toggle que altera o tema para claro e escuro
 - [ ] 9. Crie uma animação de loading
 - [ ] 10. Utilize a lib Particle.js do JavaScript
 - [ ] 11. Crie o Layout de um formulário de login
