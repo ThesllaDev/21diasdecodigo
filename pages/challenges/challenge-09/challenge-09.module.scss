@@ -1,0 +1,24 @@
+@use "../../../styles/mixins" as mix;
+
+.container {
+  @include mix.flex-center();
+  font-size: 4em;
+  min-height: 100vh;
+  text-align: center;
+
+  span {
+    animation: loading 1.32s infinite linear;
+  }
+
+  @for $i from 1 through 10 {
+    :nth-child(#{$i}) {
+      animation-delay: $i * 0.12s;
+    }
+  }
+}
+
+@keyframes loading {
+  to {
+    opacity: 0;
+  }
+}
