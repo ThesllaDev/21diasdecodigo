@@ -1,0 +1,93 @@
+@use "../../../styles/mixins" as mix;
+
+.main {
+  background: #e3e3e3;
+  color: #1b1b1b;
+  @include mix.flex-center(column);
+  min-height: 100vh;
+
+  section {
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    max-width: 440px;
+    width: 100%;
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #1b1b1b;
+      font-size: 1rem;
+      padding: 6px 10px 6px 0;
+      width: 100%;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    a {
+      color: #0067b8;
+      text-decoration: none;
+
+      &:hover {
+        color: #666;
+        text-decoration: underline;
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      height: 32px;
+      margin-left: 5px;
+      text-align: center;
+      width: 108px;
+    }
+
+    .btn__back {
+      background: #ccc;
+      color: #1b1b1b;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .btn__advance {
+      background: #0067b8;
+      color: #fff;
+
+      &:hover {
+        background: #005da6;
+      }
+    }
+  }
+
+  .login {
+    padding: 44px;
+  }
+
+  .options {
+    align-items: center;
+    display: flex;
+    font-size: 0.675rem;
+    font-weight: 300;
+    padding: 8px 44px;
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+}
