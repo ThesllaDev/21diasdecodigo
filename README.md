@@ -29,5 +29,5 @@ Os principais objetivos desse desafio é aprender e melhorar suas habilidades de
 - [x] 10. Utilize a lib Particle.js do JavaScript
 - [x] 11. Crie o Layout de um formulário de login
 - [x] 12. Desenvolva uma galeria de imagens
-- [ ] 13. Desenvolva um menu responsivo
-- [ ] 14. Crie um formulário de quizzes
+- [x] 13. Desenvolva um menu responsivo
+- [x] 14. Crie um formulário de quizzes
