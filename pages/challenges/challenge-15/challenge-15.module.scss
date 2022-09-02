@@ -1,0 +1,122 @@
+@use "../../../styles/mixins" as mix;
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+.main {
+  align-items: center;
+  background: #f3f3f3;
+  color: #030303;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  justify-content: space-around;
+  min-height: 100vh;
+
+  header {
+    border-bottom: 1px solid #b6bcc8;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 30px;
+    width: 100%;
+
+    nav {
+      align-items: center;
+      display: flex;
+
+      h2 {
+        margin-right: 30px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        a {
+          color: #68707d;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+    }
+
+    div {
+      align-items: center;
+      column-gap: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  section {
+    @include mix.flex-center(row);
+    padding: 30px 60px;
+    width: 100%;
+
+    .banner {
+      max-width: 440px;
+
+      ul {
+        display: flex;
+        gap: 15px;
+      }
+    }
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin: 0 30px;
+      padding: 30px 0;
+
+      h3 {
+        color: #ff7d1a;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #68707d;
+      }
+
+      .current__price {
+        font-weight: bold;
+        font-size: 1.5rem;
+
+        span {
+          background: #ffede0;
+          border-radius: 10px;
+          color: #ff7d1a;
+          padding: 4px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .buttons__options {
+      display: flex;
+      column-gap: 30px;
+
+      div {
+        align-items: center;
+        background: #b6bcc8;
+        border-radius: 10px;
+        column-gap: 15px;
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        background: #b6bcc8;
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+      }
+
+      .btn__cart {
+        align-items: center;
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+}
