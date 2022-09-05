@@ -1,0 +1,39 @@
+@use "../../../styles/mixins" as mix;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap");
+
+.main {
+  background: #030303;
+  color: #f3f3f3;
+  font-family: "Fira Code", monospace;
+  @include mix.flex-center(column);
+  gap: 30px;
+  min-height: 100vh;
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+
+    button {
+      background: #f00;
+      border: 3px solid #030303;
+      color: #f3f3f3;
+      margin: 30px auto;
+      padding: 15px 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  section {
+    background: #e3e3e3;
+    color: #080808;
+    padding: 30px;
+    text-align: center;
+  }
+}
