@@ -35,7 +35,7 @@ Os principais objetivos desse desafio é aprender e melhorar suas habilidades de
 - [x] 15. Desenvolva um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens)
 - [x] 16. Desenvolva um site utilizando alguma API pública
 - [x] 17. Desenvolva um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada
-- [ ] 18. Desenvolva um gerador de senhas aleatórias
+- [x] 18. Desenvolva um gerador de senhas aleatórias
 - [ ] 19. Desenvolva um site que gere imagens aleatórias utilizando a API do Unsplash
 - [ ] 20. Desenvolva um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência
 - [ ] 21. Desenvolva uma página para ser seu portfólio
