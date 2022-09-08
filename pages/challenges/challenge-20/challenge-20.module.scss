@@ -1,0 +1,29 @@
+@use "../../../styles/mixins" as mix;
+
+.main {
+  background: #030303;
+  color: #f3f3f3;
+  @include mix.flex-center(column);
+  min-height: 100vh;
+
+  section {
+    @include mix.flex-center(column);
+    gap: 30px;
+
+    .emoji {
+      @include mix.flex-center();
+      flex-wrap: wrap;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 3rem;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    textarea {
+      padding: 10px;
+    }
+  }
+}
