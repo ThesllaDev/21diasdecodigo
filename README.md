@@ -38,4 +38,4 @@ Os principais objetivos desse desafio é aprender e melhorar suas habilidades de
 - [x] 18. Desenvolva um gerador de senhas aleatórias
 - [x] 19. Desenvolva um site que gere imagens aleatórias utilizando a API do Unsplash
 - [x] 20. Desenvolva um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência
-- [ ] 21. Desenvolva uma página para ser seu portfólio
+- [x] 21. Desenvolva uma página para ser seu portfólio
