@@ -1,0 +1,48 @@
+@use "../../../styles/_mixins" as mix;
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+.container {
+  @include mix.flex-center();
+  min-height: 100vh;
+}
+
+.btn_pixeled {
+  background-color: #070707;
+  box-shadow: 5px 5px #86041c;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Silkscreen", cursive;
+  height: 60px;
+  line-height: 60px;
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+  transition: 0.5s;
+  width: 180px;
+
+  &:hover {
+    animation: pixel-formation 0.8s steps(8) forwards;
+    background: #ec0b36 url("./img/pixel.png");
+    background-size: 180px;
+    transition-delay: 0.8s;
+  }
+
+  &:active {
+    box-shadow: #ec0b36 1px 1px;
+    transition-delay: 0.1s;
+    transform: translate(10px, 10px);
+  }
+}
+
+@keyframes pixel-formation {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}

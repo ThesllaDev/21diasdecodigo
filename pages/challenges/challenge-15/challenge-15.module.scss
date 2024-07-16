@@ -36,6 +36,10 @@
           color: #68707d;
           font-weight: bold;
           text-decoration: none;
+
+          &:hover {
+            color: #030303;
+          }
         }
       }
     }
@@ -90,6 +94,10 @@
           font-size: 1.2rem;
         }
       }
+
+			.price {
+				text-decoration: line-through;
+			}
     }
 
     .buttons__options {

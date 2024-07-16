@@ -3,6 +3,7 @@ import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
 import styles from "./challenge-10.module.scss";
+import HeaderProject from "../../../components/HeaderProject";
 
 export default function ParticleJS() {
   const options = useMemo(() => {
@@ -28,7 +29,11 @@ export default function ParticleJS() {
         },
       },
       particles: {
+        color: {
+          value: "#3b82f6",
+        },
         links: {
+          color: "#3b82f6",
           enable: true,
           distance: 70,
         },
@@ -51,10 +56,13 @@ export default function ParticleJS() {
   }, []);
 
   return (
-    <main className={styles.main}>
-      <Particles init={particlesInit} options={options} />
-      <h1>Particle.js/tsParticles</h1>
-      <h2>With React.js/Next.js</h2>
-    </main>
+    <>
+      <HeaderProject id="10" title="Utilize a lib Particle.js do JavaScript" />
+      <main className={styles.main}>
+        <Particles init={particlesInit} options={options} />
+        <h1>Particle.js/tsParticles</h1>
+        <h2>With React.js/Next.js</h2>
+      </main>
+    </>
   );
 }

@@ -1,0 +1,13 @@
+@use "../../../styles/mixins" as mix;
+
+.container {
+  font-weight: bold;
+  @include mix.flex-center();
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: #3a4764;
+  padding: .875rem;
+  max-width: 100%;
+}

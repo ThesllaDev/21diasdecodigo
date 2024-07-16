@@ -1,5 +1,8 @@
 @use "./reset";
-@use "../pages/challenges/challenge-13/challenge-13.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;

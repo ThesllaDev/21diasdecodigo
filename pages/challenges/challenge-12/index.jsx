@@ -16,6 +16,7 @@ import CoverRickyAndMorty from "./img/cover-ricky-and-morty.jpg";
 import CoverSenhorDosAneis from "./img/cover-senhor-dos-aneis.jpg";
 import CoverSlamDunk from "./img/cover-slam-dunk.jpg";
 import CoverVingadoresUlimato from "./img/cover-vingadores-ultimato.jpg";
+import HeaderProject from "../../../components/HeaderProject";
 
 export default function ImageGallery() {
   const responsive = {
@@ -37,90 +38,93 @@ export default function ImageGallery() {
   };
 
   return (
-    <main>
-      <section>
-        <Carousel
-          showDots={true}
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          <div>
-            <Image
-              src={CoverAEsperaDeUmMilage}
-              alt="Cover A espera de um milagre"
-            />
-          </div>
-          <div>
-            <Image src={CoverBreakingBad} alt="Cover Breaking Bad" />
-          </div>
-          <div>
-            <Image src={CoverCidadeDeDeus} alt="Cover Cidade de Deus" />
-          </div>
-          <div>
-            <Image src={CoverDrHouse} alt="Cover Cover Dr.House" />
-          </div>
-          <div>
-            <Image src={CoverGameOfThrones} alt="Cover Game of Thrones" />
-          </div>
-          <div>
-            <Image src={CoverLaCasaDePapel} alt="Cover La casa de papel" />
-          </div>
-          <div>
-            <Image src={CoverMrRobot} alt="Cover MrRobot" />
-          </div>
-        </Carousel>
-      </section>
+    <>
+      <HeaderProject id="12" title="Desenvolva uma galeria de imagens" />
+      <main>
+        <section>
+          <Carousel
+            showDots={true}
+            responsive={responsive}
+            ssr={true}
+            infinite={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            <div>
+              <Image
+                src={CoverAEsperaDeUmMilage}
+                alt="Cover A espera de um milagre"
+              />
+            </div>
+            <div>
+              <Image src={CoverBreakingBad} alt="Cover Breaking Bad" />
+            </div>
+            <div>
+              <Image src={CoverCidadeDeDeus} alt="Cover Cidade de Deus" />
+            </div>
+            <div>
+              <Image src={CoverDrHouse} alt="Cover Dr.House" />
+            </div>
+            <div>
+              <Image src={CoverGameOfThrones} alt="Cover Game of Thrones" />
+            </div>
+            <div>
+              <Image src={CoverLaCasaDePapel} alt="Cover La casa de papel" />
+            </div>
+            <div>
+              <Image src={CoverMrRobot} alt="Cover MrRobot" />
+            </div>
+          </Carousel>
+        </section>
 
-      <section>
-        <Carousel
-          showDots={true}
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          <div>
-            <Image src={CoverNarutoShippuden} alt="Cover Naruto Shippuden" />
-          </div>
-          <div>
-            <Image src={CoverOPoderosoChefao} alt="Cover O Poderoso Chefao" />
-          </div>
-          <div>
-            <Image src={CoverPeakyBlinders} alt="Cover Peaky Blinders" />
-          </div>
-          <div>
-            <Image src={CoverRickyAndMorty} alt="Cover Ricky and Morty" />
-          </div>
-          <div>
-            <Image src={CoverSenhorDosAneis} alt="Cover Senhor dos aneis" />
-          </div>
-          <div>
-            <Image src={CoverSlamDunk} alt="Cover Slam Dunk" />
-          </div>
-          <div>
-            <Image
-              src={CoverVingadoresUlimato}
-              alt="Cover Vingadores ultimato"
-            />
-          </div>
-        </Carousel>
-      </section>
-    </main>
+        <section>
+          <Carousel
+            showDots={true}
+            responsive={responsive}
+            ssr={true}
+            infinite={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+          >
+            <div>
+              <Image src={CoverNarutoShippuden} alt="Cover Naruto Shippuden" />
+            </div>
+            <div>
+              <Image src={CoverOPoderosoChefao} alt="Cover O Poderoso Chefao" />
+            </div>
+            <div>
+              <Image src={CoverPeakyBlinders} alt="Cover Peaky Blinders" />
+            </div>
+            <div>
+              <Image src={CoverRickyAndMorty} alt="Cover Ricky and Morty" />
+            </div>
+            <div>
+              <Image src={CoverSenhorDosAneis} alt="Cover Senhor dos aneis" />
+            </div>
+            <div>
+              <Image src={CoverSlamDunk} alt="Cover Slam Dunk" />
+            </div>
+            <div>
+              <Image
+                src={CoverVingadoresUlimato}
+                alt="Cover Vingadores ultimato"
+              />
+            </div>
+          </Carousel>
+        </section>
+      </main>
+    </>
   );
 }
