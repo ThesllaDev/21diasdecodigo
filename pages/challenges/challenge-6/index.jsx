@@ -10,7 +10,7 @@ import HeaderProject from "../../../components/HeaderProject";
 export default function NFTCard() {
   return (
     <>
-      <HeaderProject id="06" title="Crie um card com o efeito glassmorphism" />
+      <HeaderProject id="6" title="Crie um card com o efeito glassmorphism" />
       <main className={styles.main__container}>
         <section className={styles.main__container__card}>
           <figure>

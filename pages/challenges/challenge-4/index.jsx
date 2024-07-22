@@ -16,7 +16,7 @@ const btnValues = [
 export default function Calculator() {
   return (
     <>
-      <HeaderProject id="04" title="Crie uma calculadora" />
+      <HeaderProject id="4" title="Crie uma calculadora" />
       <CalcProvider>
         <Wrapper>
           <Screen />

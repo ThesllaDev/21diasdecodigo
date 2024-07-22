@@ -4,7 +4,7 @@ import styles from "./challenge-09.module.scss";
 export default function Loading() {
   return (
     <>
-      <HeaderProject id="09" title="Crie uma animação de loading" />
+      <HeaderProject id="9" title="Crie uma animação de loading" />
       <main className={styles.container}>
         <span>L</span>
         <span>O</span>

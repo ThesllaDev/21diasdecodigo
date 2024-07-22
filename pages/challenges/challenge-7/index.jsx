@@ -51,7 +51,7 @@ export default function Countdown() {
         <title>Launch countdown timer | Frontend Mentor</title>
       </Head>
 
-      <HeaderProject id="07" title="Desenvolva um contador" />
+      <HeaderProject id="7" title="Desenvolva um contador" />
       <main className={styles.countdown}>
         <header>
           <h1>We&apos;re launching soon</h1>
