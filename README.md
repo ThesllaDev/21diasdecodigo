@@ -2,9 +2,9 @@
 
 Este é um desafio proposto em um [post](https://www.instagram.com/p/ChTBg1BpLGU/) pela [Rocketseat](https://www.rocketseat.com.br/) e a [@Jakeliny](https://jakeliny.com.br/) para codar pelo menos 1 hora por dia, durante 21 dias
 
-🌐 **Link do website**: https://21diasdecodigo-five.vercel.app/
+🌐 **Link do website**: <https://21diasdecodigo-five.vercel.app/>
 
-https://github.com/user-attachments/assets/6840cd81-1110-49bb-9bb5-26c3a5450152
+<https://github.com/user-attachments/assets/6840cd81-1110-49bb-9bb5-26c3a5450152>
 
 ## 🎯 Objetivo
 
@@ -42,4 +42,4 @@ Os principais objetivos desse desafio é aprender e melhorar suas habilidades de
 - [x] 18. [Desenvolva um gerador de senhas aleatórias](https://21diasdecodigo-five.vercel.app/challenges/challenge-18)
 - [x] 19. [Desenvolva um site que gere imagens aleatórias utilizando a API do Unsplash](https://21diasdecodigo-five.vercel.app/challenges/challenge-19)
 - [x] 20. [Desenvolva um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência](https://21diasdecodigo-five.vercel.app/challenges/challenge-20)
-- [x] 21. Desenvolva uma página para ser seu portfólio
+- [x] 21. [Desenvolva uma página para ser seu portfólio](https://theslladev.vercel.app/)

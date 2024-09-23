@@ -40,7 +40,7 @@ export default function Menu({ theme }) {
     5: "/404",
     8: "/",
     13: "/",
-    21: "/custom-link-21",
+    21: "https://theslladev.vercel.app/",
   };
 
   return (

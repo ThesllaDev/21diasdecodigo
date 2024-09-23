@@ -48,6 +48,6 @@ const projects = [
     Title:
       "Desenvolva um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência",
   },
-  { ID: 21, Title: "Desenvolva uma página para ser seu portfólio - WIP(Work in progress)!" },
+  { ID: 21, Title: "Desenvolva uma página para ser seu portfólio" },
 ];
 export default projects;

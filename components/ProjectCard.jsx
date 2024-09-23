@@ -19,8 +19,8 @@ function ProjectCard({ id, title }) {
       code: "https://github.com/ThesllaDev/21diasdecodigo/tree/main/pages/components/Menu.jsx",
     },
     21: {
-      demo: "#",
-      code: "https://github.com/ThesllaDev/21diasdecodigo/tree/main/pages/challenges/challenge-21",
+      demo: "https://theslladev.vercel.app/",
+      code: "https://github.com/ThesllaDev/portfolio",
     },
   };
 

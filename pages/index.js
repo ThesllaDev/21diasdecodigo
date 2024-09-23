@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const externalLinks = {
   1: "https://github.com/ThesllaDev/21diasdecodigo",
-  21: "#",
+  21: "https://theslladev.vercel.app/",
 };
 
 export default function Home() {
